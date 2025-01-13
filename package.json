@@ -1,0 +1,22 @@
+{
+  "name": "erv-pw",
+  "version": "1.0.0",
+  "description": "Playwright automation for the Emberbrand RPG website",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidLMay8/emberbrand-playwright-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidLMay8/emberbrand-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/DavidLMay8/emberbrand-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.5"
+  }
+}
