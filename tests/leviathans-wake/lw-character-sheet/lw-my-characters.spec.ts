@@ -1,15 +1,13 @@
 import test, { expect } from "@playwright/test";
 import { LwCharacterSheetPage } from "../../../pages/leviathans-wake/lw-character-sheet/lw-character-sheet-page";
-import { loginUser } from "../../../utils/commands";
 
-// test.beforeEach(async ({ page }) => {
-//     loginUser(page, "drujeful@gmail.com", "EmberbrandTest1234");
-// });
-
-test("has title", async ({ page }) => {
+test.beforeEach(async ({ page }) => {
   const lwCharacterSheetPage = new LwCharacterSheetPage(page);
-
   await lwCharacterSheetPage.goto();
+});
+
+test("open my characters modal", async ({ page }) => {
+  const lwCharacterSheetPage = new LwCharacterSheetPage(page);
   await expect(lwCharacterSheetPage.characterSheetTitle).toHaveText(
     "Leviathan's Wake"
   );
