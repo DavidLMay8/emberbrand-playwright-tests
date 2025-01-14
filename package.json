@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Playwright automation for the Emberbrand RPG website",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "playwright test --ui"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DavidLMay8/emberbrand-playwright-tests.git"
